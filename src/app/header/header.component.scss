@@ -1,0 +1,36 @@
+@import "../scss/variable.scss";
+
+.header {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  font-size: $font-size-large;
+  color: $brand-ui-white;
+  background: linear-gradient(
+    to right,
+    $base-framework-primary 0%,
+    $base-framework-secondary 51%,
+    $base-framework-tertiary 100%
+  );
+
+  .left-bar {
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    margin-left: $padding-large;
+
+    i {
+      font-size: $font-size-x-large;
+    }
+    span {
+      margin: $padding-x-small;
+    }
+  }
+
+  .right-bar {
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
